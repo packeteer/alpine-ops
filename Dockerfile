@@ -2,6 +2,12 @@ FROM alpine
 
 MAINTAINER packeteer <packeteer@gmail.com>
 
-RUN apk add --no-cache zsh aws-cli-zsh-completion openssh openssh-client ssh-keysign rsync tmux git ansible neovim httpie
+RUN apk add --no-cache zsh openssh rsync tmux git ansible neovim ncurses
+RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
-CMD /usr/bin/tmux new -s master
+ADD ./config/.tmux.conf /root/.tmux.conf
+ADD ./config/.zshrc /root/.zshrc
+ENV SHELL=/bin/zsh
+ENV LC_ALL=en_US.UTF-8
+
+ENTRYPOINT ["zsh"]
