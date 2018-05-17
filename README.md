@@ -1,5 +1,6 @@
 # alpine-ops
-Alpine container with some basic tools for Ops work, now with zsh and oh-my-zsh
+Alpine container with some basic tools for Ops work, now with zsh, oh-my-zsh, neovim and aws-cli
 
-Package List:
-zsh openssh rsync tmux git ansible neovim ncurses
+68 Alpine packages installed, plus a bunch of python (pip) packages.
+
+Total size is now around 225MB
