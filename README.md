@@ -1,4 +1,7 @@
 # alpine-ops
-Alpine container with some basic tools for Ops work, now with zsh, oh-my-zsh, neovim, ansible and aws-cli
+Alpine container with some tools for Ops work, zsh, oh-my-zsh, neovim, python, ansible, nodejs and aws-cli
 
-68 Alpine packages installed, plus a bunch of python (pip) packages for aws-cli.
+The following Alpine packages were installed (plus required deps):
+zsh openssh rsync tmux git python2 py2-pip py2-magic py-boto ansible neovim ncurses groff less mailcap nodejs
+
+Also installed aws-cli via pip
