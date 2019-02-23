@@ -5,3 +5,4 @@ The following Alpine packages were installed (plus required deps):
 zsh openssh rsync tmux git ansible neovim httpie
 
 Now built on mikesir87/aws-cli
+Note: container size is now 325MB 😱
